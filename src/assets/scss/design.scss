@@ -1,0 +1,126 @@
+@import "variable.scss";
+@import "mixin.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+body {
+    font-family: 'Roboto Serif', serif;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    border:none;
+    border-radius:30px;
+    color: #222222;
+    padding: 12px 24px;
+    &:hover {
+        background-color: rgba(255,255,255,0.75);
+        color: #222222;
+    }
+}
+
+.header {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 15px 0;
+    .nav-item {
+        .nav-link {
+            color: #ffffff;
+        }
+    }
+}
+.fst-section {
+    background: url(../img/bg.jpg) no-repeat 0 0 / cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    .frss-content {
+        background-color: rgba(255,255,255,0.4);
+        height: 100%;
+        padding: 50px;
+        padding: 50px;
+        @include flex-center;
+        .frssc-inner {
+            text-align: center;
+            max-width: 400px;
+            h2 {
+                line-height: 1.25em;
+                font-size: 72px;
+            }
+        }
+    }
+}
+
+.d-para-box {
+    background-color: $primary-color;
+    padding: 100px 30px;
+    text-align: center;
+    color: #ffffff;
+    @include flex-center;
+    .dp-content {
+        max-width:780px;
+        h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.875em;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.get-in-touch {
+    background-color: $primary-color;
+    padding: 50px 30px;
+    h2 {
+        color: #ffffff;
+        font-size: 36px;
+    }
+    .emailer {
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .form-default {
+        label {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 0;
+        }
+        .form-control {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            border-radius: 0;
+            padding-left: 0;
+            &::-webkit-input-placeholder {
+                color: rgba(255,255,255,0.6);
+                font-size: 12px;
+            }
+            &:visited,
+            &:active,
+            &:focus,
+            &::selection,
+            &:-internal-autofill-selected {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $primary-color;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;
+    .social-wrap {
+        margin-bottom: 30px;
+        a {
+            margin: 0 10px;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
